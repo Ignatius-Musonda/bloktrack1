@@ -1,9 +1,11 @@
+
+
 import "./Form.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faChevronDown, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react"
 
-function Formz(){  
+function AddProp(){  
 
     const [stepone, setStepOne] = useState(true);
     const [steptwo, setStepTwo] = useState(false); 
@@ -263,4 +265,4 @@ function Formz(){
 
 }
 
-export default Formz;
+export default AddProp;

@@ -1,13 +1,15 @@
 
 import {useEffect, useState} from 'react'
-import SideBar from './Components/SideBar/SideBar';
+// import SideBar from './Components/SideBar/SideBar';
 import {Routes,Route,} from "react-router-dom"
 import Overview from './Components/Overview/Overview';
 import Settings from './Components/Settings/Settings';
 import Marketplace from './Pages/Marketplace/Marketplace';
 import KYC from './Pages/KYC/KYC';
 import {Home} from "../src/Components/Home"
-import {NavBar} from "../src/Components/Navbar"
+import AddProp from './Components/AddProp/AddProp';
+import SideBar from './Components/SideBar/SideBar';
+// import {NavBar} from "../src/Components/Navbar"
 // import {MarketPlace} from "./components/marketplace"
 // import{Marketplace} from "../src/Components/Home"
 // import {About} from "./components/about"
@@ -36,7 +38,7 @@ function App() {
      {/* <div className='wholeDash'>
         <SideBar/> */}
       
-          
+          {/* <NavBar/> */}
           <Routes>
                <Route index path="overview" element={<Overview />}>
                      
@@ -48,7 +50,16 @@ function App() {
             <Route path="/marketplace" element={<Marketplace />}>
                
             </Route>
-            <Route path="/" element={<KYC />}>
+             <Route path="/" element={<Home />}> 
+               
+            </Route> 
+            <Route path="/KYC" element={<KYC />}>
+               
+            </Route>
+            <Route path="/addprop" element={<AddProp />}>
+               
+            </Route>
+            <Route path="/dashboard" element={<SideBar />}>
                
             </Route>
                  
